@@ -9,13 +9,13 @@ export default function Work() {
   return (
     <section
       id="work"
-      className="relative overflow-hidden bg-[#0a0a0a] px-5 py-28 text-white md:px-10 md:py-40"
+      className="relative overflow-hidden bg-[#0a0a0a] px-5 py-20 text-white md:px-10 md:py-28"
     >
       <div className="mx-auto max-w-[1600px]">
         {/* HEADER */}
-        <div className="flex flex-col justify-between gap-10 border-t border-white/15 pt-5 md:flex-row md:items-end">
+        <div className="flex flex-col justify-between gap-8 border-t border-white/15 pt-5 md:flex-row md:items-end">
           <div>
-            <p className="mb-5 text-[10px] uppercase tracking-[0.2em] text-white/35">
+            <p className="mb-4 text-[10px] uppercase tracking-[0.2em] text-white/35">
               01 — Selected Work
             </p>
 
@@ -45,7 +45,7 @@ export default function Work() {
               duration: 0.8,
               delay: 0.2,
             }}
-            className="max-w-xs text-sm leading-7 text-white/40 md:mb-3"
+            className="max-w-xs text-sm leading-7 text-white/40 md:mb-2"
           >
             A selection of brands, identities and visual worlds created with
             intention, personality and character.
@@ -53,7 +53,7 @@ export default function Work() {
         </div>
 
         {/* PROJECTS */}
-        <div className="mt-20 md:mt-32">
+        <div className="mt-14 md:mt-20">
           {projects.map((project, index) => {
             const isOffset = index % 2 !== 0;
 
@@ -62,7 +62,7 @@ export default function Work() {
                 key={project.slug}
                 initial={{
                   opacity: 0,
-                  y: 80,
+                  y: 60,
                 }}
                 whileInView={{
                   opacity: 1,
@@ -70,20 +70,17 @@ export default function Work() {
                 }}
                 viewport={{
                   once: true,
-                  margin: "-120px",
+                  margin: "-100px",
                 }}
                 transition={{
-                  duration: 1,
+                  duration: 0.9,
                   ease: [0.16, 1, 0.3, 1],
                 }}
-                className={`group mb-28 last:mb-0 md:mb-48 ${
+                className={`group mb-20 last:mb-0 md:mb-32 ${
                   isOffset ? "md:ml-[17%]" : ""
                 }`}
               >
-                <Link
-                  href={`/work/${project.slug}`}
-                  className="block"
-                >
+                <Link href={`/work/${project.slug}`} className="block">
                   {/* IMAGE */}
                   <div
                     className={`relative overflow-hidden bg-[#151515] ${
@@ -92,7 +89,6 @@ export default function Work() {
                         : "aspect-[4/5] md:aspect-[16/10] md:w-[82%]"
                     }`}
                   >
-                    {/* IMAGE */}
                     <motion.div
                       className="absolute inset-0"
                       whileHover={{
@@ -176,7 +172,7 @@ export default function Work() {
                   </div>
 
                   {/* PROJECT META */}
-                  <div className="flex flex-col gap-4 border-b border-white/10 py-5 md:flex-row md:items-center md:justify-between md:py-6">
+                  <div className="flex flex-col gap-3 border-b border-white/10 py-4 md:flex-row md:items-center md:justify-between md:py-5">
                     <div className="flex flex-wrap items-center gap-x-5 gap-y-2">
                       <span className="text-[10px] uppercase tracking-[0.15em] text-white/25">
                         {project.number}
@@ -221,7 +217,7 @@ export default function Work() {
           transition={{
             duration: 0.8,
           }}
-          className="mt-20 flex items-center justify-between border-t border-white/10 pt-5 md:mt-32"
+          className="mt-14 flex items-center justify-between border-t border-white/10 pt-5 md:mt-20"
         >
           <p className="text-[10px] uppercase tracking-[0.15em] text-white/30">
             {String(projects.length).padStart(2, "0")} Selected Projects

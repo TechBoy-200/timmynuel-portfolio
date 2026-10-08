@@ -22,7 +22,7 @@ export default function Hero() {
   const project = projects[activeProject];
 
   return (
-    <section className="relative min-h-screen overflow-hidden bg-[#0a0a0a] px-5 pb-6 pt-28 text-white md:px-10 md:pb-8 md:pt-32">
+    <section className="relative min-h-screen overflow-hidden bg-[#0a0a0a] px-5 pb-5 pt-24 text-white md:px-10 md:pb-7 md:pt-28">
       {/* ATMOSPHERE */}
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute left-[5%] top-[15%] h-72 w-72 rounded-full bg-white/[0.035] blur-[120px] md:h-[600px] md:w-[600px]" />
@@ -39,7 +39,7 @@ export default function Hero() {
         />
       </div>
 
-      <div className="relative z-10 mx-auto flex min-h-[calc(100vh-8rem)] max-w-[1600px] flex-col justify-between">
+      <div className="relative z-10 mx-auto flex min-h-[calc(100vh-7rem)] max-w-[1600px] flex-col justify-between">
         {/* TOP INFO */}
         <motion.div
           initial={{ opacity: 0, y: -15 }}
@@ -61,7 +61,7 @@ export default function Hero() {
         </motion.div>
 
         {/* MAIN */}
-        <div className="relative flex flex-1 items-center">
+        <div className="relative flex flex-1 items-center py-10 md:py-6">
           <div className="relative z-20 w-full">
             {/* TIMMYNUEL */}
             <div className="overflow-hidden">
@@ -80,7 +80,7 @@ export default function Hero() {
             </div>
 
             {/* CREATURES + PROJECT */}
-            <div className="relative mt-1 md:mt-0">
+            <div className="relative mt-0">
               <motion.h2
                 initial={{ y: "110%" }}
                 animate={{ y: 0 }}
@@ -124,7 +124,7 @@ export default function Hero() {
                     scale: 1.04,
                     rotate: -1,
                   }}
-                  className="absolute right-0 top-[5%] z-10 w-[28vw] max-w-[400px] min-w-[170px] md:right-[5%] md:top-[-35%]"
+                  className="absolute right-0 top-[3%] z-10 w-[28vw] max-w-[400px] min-w-[170px] md:right-[5%] md:top-[-35%]"
                 >
                   <Link href={`/work/${project.slug}`} className="group block">
                     <div className="relative aspect-[4/5] overflow-hidden bg-[#161616] shadow-2xl shadow-black/50">
@@ -181,14 +181,14 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.75 }}
-          className="grid gap-8 border-t border-white/15 pt-4 md:grid-cols-3 md:gap-5"
+          className="grid gap-6 border-t border-white/15 pt-3 md:grid-cols-3 md:gap-5 md:pt-4"
         >
           <div>
             <p className="text-[9px] uppercase tracking-[0.16em] text-white/30">
               Visuals with character
             </p>
 
-            <p className="mt-2 max-w-xs text-sm leading-6 text-white/50">
+            <p className="mt-1.5 max-w-xs text-sm leading-6 text-white/50">
               Building identities and visual worlds that refuse to blend in.
             </p>
           </div>
@@ -198,7 +198,7 @@ export default function Hero() {
               Currently
             </p>
 
-            <p className="mt-2 text-sm text-white/50">
+            <p className="mt-1.5 text-sm text-white/50">
               Available for selected projects
             </p>
           </div>
@@ -229,7 +229,7 @@ export default function Hero() {
 
       {/* PROJECT INDICATOR */}
       {projects.length > 1 && (
-        <div className="absolute bottom-7 right-5 z-20 flex items-center gap-2 md:bottom-9 md:right-10">
+        <div className="absolute bottom-6 right-5 z-20 flex items-center gap-2 md:bottom-8 md:right-10">
           {projects.map((item, index) => (
             <button
               key={item.slug}

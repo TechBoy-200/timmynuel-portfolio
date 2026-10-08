@@ -6,11 +6,11 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="relative overflow-hidden bg-[#0a0a0a] px-5 pb-8 pt-28 text-white md:px-10 md:pb-10 md:pt-40"
+      className="relative overflow-hidden bg-[#0a0a0a] px-5 pb-8 pt-20 text-white md:px-10 md:pb-10 md:pt-28"
     >
       <div className="mx-auto max-w-[1600px]">
         {/* TOP LINE */}
-        <div className="mb-16 border-t border-white/15 pt-5 md:mb-24">
+        <div className="mb-12 border-t border-white/15 pt-5 md:mb-16">
           <div className="flex items-start justify-between">
             <p className="text-[10px] uppercase tracking-[0.2em] text-white/35">
               04 — Contact
@@ -43,7 +43,7 @@ export default function Contact() {
             </motion.h2>
           </div>
 
-          <div className="mt-10 flex flex-col gap-8 md:ml-[25%] md:mt-14 md:max-w-xl">
+          <div className="mt-8 flex flex-col gap-7 md:ml-[25%] md:mt-10 md:max-w-xl">
             <motion.p
               initial={{ opacity: 0, y: 25 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -73,21 +73,21 @@ export default function Contact() {
         </div>
 
         {/* CONTACT DETAILS */}
-        <div className="mt-28 grid border-t border-white/10 md:mt-40 md:grid-cols-3">
-          <div className="border-b border-white/10 py-6 md:border-b-0 md:border-r md:pr-8">
+        <div className="mt-20 grid border-t border-white/10 md:mt-28 md:grid-cols-3">
+          <div className="border-b border-white/10 py-5 md:border-b-0 md:border-r md:pr-8">
             <p className="text-[9px] uppercase tracking-[0.18em] text-white/30">
               Email
             </p>
 
             <a
               href="mailto:hello@timmy_nuel_creatures.com"
-              className="mt-3 block text-sm text-white/65 transition-colors hover:text-white"
+              className="mt-2 block text-sm text-white/65 transition-colors hover:text-white"
             >
               hello@timmy_nuel_creatures.com
             </a>
           </div>
 
-          <div className="border-b border-white/10 py-6 md:border-b-0 md:border-r md:px-8">
+          <div className="border-b border-white/10 py-5 md:border-b-0 md:border-r md:px-8">
             <p className="text-[9px] uppercase tracking-[0.18em] text-white/30">
               Instagram
             </p>
@@ -96,37 +96,35 @@ export default function Contact() {
               href="https://instagram.com/timmy_nuel_creatures"
               target="_blank"
               rel="noreferrer"
-              className="mt-3 block text-sm text-white/65 transition-colors hover:text-white"
+              className="mt-2 block text-sm text-white/65 transition-colors hover:text-white"
             >
               @timmy_nuel_creatures ↗
             </a>
           </div>
 
-          <div className="py-6 md:pl-8">
+          <div className="py-5 md:pl-8">
             <p className="text-[9px] uppercase tracking-[0.18em] text-white/30">
               Location
             </p>
 
-            <p className="mt-3 text-sm text-white/65">
-              Nigeria
-            </p>
+            <p className="mt-2 text-sm text-white/65">Nigeria</p>
           </div>
         </div>
 
         {/* FOOTER */}
-        <footer className="mt-20 border-t border-white/15 pt-5 md:mt-28">
-          <div className="flex flex-col gap-8 md:flex-row md:items-end md:justify-between">
+        <footer className="mt-16 border-t border-white/15 pt-5 md:mt-20">
+          <div className="flex flex-col gap-7 md:flex-row md:items-end md:justify-between">
             <div>
               <p className="text-4xl font-bold uppercase tracking-[-0.07em] md:text-6xl">
                 TIMMYNUEL<span className="text-white/30">®</span>
               </p>
 
-              <p className="mt-3 text-[9px] uppercase tracking-[0.18em] text-white/30">
+              <p className="mt-2 text-[9px] uppercase tracking-[0.18em] text-white/30">
                 Graphic Designer & Visual Creative
               </p>
             </div>
 
-            <div className="flex flex-wrap gap-6 text-[9px] uppercase tracking-[0.16em] text-white/35">
+            <div className="flex flex-wrap gap-5 text-[9px] uppercase tracking-[0.16em] text-white/35">
               <a
                 href="#work"
                 className="transition-colors hover:text-white"
@@ -166,7 +164,7 @@ export default function Contact() {
             </div>
           </div>
 
-          <div className="mt-12 flex items-center justify-between border-t border-white/10 pt-4">
+          <div className="mt-9 flex items-center justify-between border-t border-white/10 pt-4">
             <p className="text-[9px] uppercase tracking-[0.15em] text-white/25">
               © 2026 Timmynuel Creatures
             </p>
